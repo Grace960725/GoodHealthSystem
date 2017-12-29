@@ -1,6 +1,78 @@
 # GoodHealthSystem
 This is a web application for sports fans.
 
+## System description 
+This system is a social networking online sports health management platform. Its main functions include sports management, activity management, user management, privilege management, statistical analysis and social interaction.
+
+## Basic function
+### Registration
+Users can use electronic mailboxes as unique identifiers for registration. 
+Directory: /goodHealth/pages/login/login.html
+### Login
+Users can use electronic mailboxes to log in. 
+Directory: /goodHealth/pages/register/register.html
+
+### Activity management
+#### All sports
+Users can view all activities and sign up for activities of interest.
+Directory: /goodHealth/pages/index.html
+#### Registration
+
+### Registrated activities
+Users can view the activities that they have been involved in and can exit from the activity. Click on "+" on the right.
+Buttons that create new activities.
+Directory: /goodHealth/pages/activities/myActivities.html
+### Create activities
+Create an activity. Users fill in information about the new activities created.
+
+## Sports Management
+### Statistics
+Users can view their own sports statistics.
+Directory: /goodHealth/pages/healthManage/mySports.html
+
+### User management
+#### Account settings
+Users can update their basic information and avatars.
+Directory: /goodHealth/pages/profile/profileReset.html
+#### Reset password
+The user can reset the password.
+Directory: /goodHealth/pages/profile/passwordReset.html
+
+### Friends management
+Users can view friends information, or delete friends that have already been added.
+Directory: /goodHealth/pages/social/myFriendsManage.html
+
+### Authority management
+#### Report an activity
+Users can report suspicious activities and fill out the reasons for the report. 
+Directory: /goodHealth/pages/index.html
+
+#### Report review
+You can confirm the handling of the report to update the status of the report (change after the administrator landing navigation). 
+Directory: /goodHealth/pages/admin/admin.html
+
+### Administrator-user management
+You can view user data or delete users.
+Directory: /goodHealth/pages/admin/userManage.html
+
+### Administrator-activity management
+Administrators can directly revoke activities that have problems after audits. 
+Directory: /goodHealth/pages/admin/activityManage.html
+
+### Statistical analysis
+#### Sleeping data analysis
+The system records the last number of users' sleep and shows the efficiency of sleep. 
+Directory: /goodHealth/pages/healthManage/mySleep.html
+
+#### Health management
+The system will provide the user's BMI index, the user can enter their own height and weight, the system will show the root BMI indicators, calculated according to the new height and weight, and assessment of health status. 
+Directory: /goodHealth/pages/healthManage/myBody.html
+
+### Social
+#### My social network
+Users can view all users with the same interest and can view data or add friends. 
+Directory: /goodHealth/pages/social/myCircle.html
+
 ## 系统简介
 本系统是一个社交化的在线运动健康管理平台，主要功能包括运动管理、活动管理、用户管理、权限管理、统计分析和社交。
 
