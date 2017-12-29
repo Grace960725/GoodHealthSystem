@@ -1,0 +1,162 @@
+/* FLOAT BUTTON */
+a#Float_button{
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    display: block;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: steelblue;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    z-index: 20;
+}
+a#Float_button span.plus{
+    display: block;
+    background: white;
+    width: 17px;
+    height: 2px;
+    position: absolute;
+    left: 6px;
+    transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+}
+a#Float_button span.plus.elem-1{
+    top: 47%;
+}
+a#Float_button.active {background-color: mediumseagreen;}
+a#Float_button span.plus.elem-2{
+    top: 47%;
+    transform: translateY(0px) translateX(0) rotate(90deg);
+}
+a#Float_button.active span.plus.elem-1{
+    transform: translateY(0px) translateX(0) rotate(45deg);
+
+}
+a#Float_button.active span.plus.elem-2{
+    transform: translateY(0px) translateX(0) rotate(135deg);
+}
+
+/* BACKGROUND */
+div.BG_darkfilter{
+    display:none;
+    opacity: 0;
+    position: fixed;
+    /*top: 0;*/
+    left: 0;
+    right: 0;
+    /*bottom: 0;*/
+    top:0;
+    height:100%;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 10;
+}
+div.BG_darkfilter.active{
+    display: block;
+    opacity:1;
+}
+
+/* TOOLTYPE */
+.tooltype{
+    display:none;
+    position: fixed;
+    right: 5%;
+    top: 60px;
+    /*margin-top: 60px;*/
+    padding: 0px 0 10px 0;
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    z-index: 30;
+    /*overflow:auto;*/
+    /*overflow-y: scroll;*/
+}
+.tooltype.active{
+    display: block;
+}
+.tooltype:after{
+    content: "";
+    /*position: absolute;*/
+    /*z-index: 1000;*/
+    top: -7px;
+    right: 7px;
+    border-top: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid #ffffff;
+}
+.tooltype h1{
+    width: 100%;
+    margin: 0 0 20px 0;
+    padding: 0;
+    height: 60px;
+    line-height: 60px;
+    font-family: 'Raleway';
+    font-size: 18px;
+    font-weight: 800;
+    text-align: center;
+    color: black;
+    background-color: #ffffff;
+}
+
+
+/* INPUT */
+/* INPUT FIELD */
+input.Classic_input{
+    display: block;
+    width: 90%;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 8px 5% 18px 5%;
+    height: 30px;
+    line-height: 3;
+    border-width: medium medium 1px;
+    border-style: none none solid;
+    border-color: #303030;
+    -moz-border-top-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    border-image: none;
+    outline: medium none;
+    color: #303030;
+    font-size: 16px;
+    vertical-align: top;
+    transition: border 0.56s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+}
+input.Classic_input:focus{ border-bottom: 1px solid #2196F3; }
+input.Classic_input.wrong{ border-bottom: 1px solid #ffac33; }
+
+/* INPUT BUTTON */
+.Input_button{
+    float: right;
+    padding: 3px 6px;
+    margin: 20px 5% 0 0;
+    border: none;
+    font-family: 'Raleway';
+    font-size: 14px;
+    font-weight: 200;
+    border-radius: 3px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 200ms;
+}
+.Input_button.success{
+    background-color: steelblue;
+    color: white;
+}
+.Input_button.success:hover{ background-color: lightskyblue;
+}
+
+.Input_button.cancel{
+    background-color: white;
+    color: #ffac33;
+}
+.Input_button.cancel:hover{
+    background-color: #ffac33;
+    color: white;
+}

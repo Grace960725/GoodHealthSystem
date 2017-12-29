@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>顾得健康-GoodHealth| 我的活动</title>
+    <meta name="robots" content="NONE,NOARCHIVE" />
+    <meta name="keywords" content="顾得健康网,网络瘦身,健身,物联网健身,健康,运动,健康秤,码表,网络码表,追踪器,健身追踪器" />
+    <meta name="description" content="顾得健康网，引进先进物联网概念及人体检测技术，准确检测记录运动、睡眠、体重等数据，并对上传数据进行详细分析，智能绘制专业分析图表，同时借助网络平台互动、PK、分享，将互动娱乐性与健身健康完美结合，全面推动人们的身心健康改善。" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="../../css/plugins/sweetalert/sweetalert.css" rel="stylesheet">
+
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../font-awesome/css/font-awesome.css" rel="stylesheet">
+
+<!---->
+    <link href="../../css/plugins/iCheck/custom.css" rel="stylesheet">
+
+    <link href="../../css/plugins/chosen/chosen.css" rel="stylesheet">
+
+    <link href="../../css/plugins/colorpicker/bootstrap-colorpicker.min.css" rel="stylesheet">
+
+    <link href="../../css/plugins/cropper/cropper.min.css" rel="stylesheet">
+
+    <link href="../../css/plugins/switchery/switchery.css" rel="stylesheet">
+
+    <link href="../../css/plugins/jasny/jasny-bootstrap.min.css" rel="stylesheet">
+
+    <link href="../../css/plugins/nouslider/jquery.nouislider.css" rel="stylesheet">
+
+    <link href="../../css/plugins/datapicker/datepicker3.css" rel="stylesheet">
+
+    <link href="../../css/plugins/ionRangeSlider/ion.rangeSlider.css" rel="stylesheet">
+    <link href="../../css/plugins/ionRangeSlider/ion.rangeSlider.skinFlat.css" rel="stylesheet">
+
+    <link href="../../css/plugins/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css" rel="stylesheet">
+
+    <link href="../../css/plugins/clockpicker/clockpicker.css" rel="stylesheet">
+
+    <link href="../../css/plugins/daterangepicker/daterangepicker-bs3.css" rel="stylesheet">
+
+    <link href="../../css/plugins/select2/select2.min.css" rel="stylesheet">
+
+    <link href="../../css/plugins/touchspin/jquery.bootstrap-touchspin.min.css" rel="stylesheet">
+    <!---->
+
+
+
+
+    <link href="../../css/animate.css" rel="stylesheet">
+    <link href="../../css/style.css" rel="stylesheet">
+    <link href="myActiviesPageStyle.css" rel="stylesheet">
+
+</head>
+
+<body class="top-navigation">
+<div class="BG_darkfilter"></div>
+
+<div id="wrapper">
+    <div id="page-wrapper" class="gray-bg">
+        <div class="row border-bottom white-bg">
+
+            <nav class="navbar navbar-static-top" role="navigation">
+                <div class="navbar-header">
+                    <button aria-controls="navbar" aria-expanded="false" data-target="#navbar" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
+                        <i class="fa fa-reorder"></i>
+                    </button>
+                    <a href="../landingGoodHealth.html" class="navbar-brand" style="font-family: 'comfortaa-bold';">GoodHealth</a>
+                </div>
+                <div class="navbar-collapse collapse" id="navbar">
+                    <ul class="nav navbar-nav">
+                        <li class="active dropdown" >
+                            <!--<a aria-expanded="false" role="button" href="layouts.html">活动</a>-->
+                            <a aria-expanded="false" role="button" href="dashboard_4.html#" class="dropdown-toggle" data-toggle="dropdown">活动<span class="caret"></span></a>
+                            <ul role="menu" class="dropdown-menu">
+                                <li><a href="../index.html">所有活动</a></li>
+                                <li class="active"><a href="../activities/myActivities.html">我的活动</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a aria-expanded="false" role="button" href="dashboard_4.html#" class="dropdown-toggle" data-toggle="dropdown">健康管理<span class="caret"></span></a>
+                            <ul role="menu" class="dropdown-menu">
+                                <li><a href="../healthManage/mySports.html">我的运动</a></li>
+                                <li><a href="../healthManage/myBody.html">身体管理</a></li>
+                                <li><a href="../healthManage/mySleep.html">睡眠分析</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a aria-expanded="false" role="button" href="dashboard_4.html#" class="dropdown-toggle" data-toggle="dropdown">社交<span class="caret"></span></a>
+                            <ul role="menu" class="dropdown-menu">
+                                <li><a href="../social/myCircle.html">我的圈子</a></li>
+                                <li><a href="../social/myFriendsManage.html">社交管理</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <form role="search" class="navbar-form-custom" action="../search_results.html">
+                                <div class="form-group">
+                                    <input type="text" placeholder="关键字搜索" class="form-control" name="top-search" id="top-search">
+                                </div>
+                            </form>
+                        </li>
+
+
+                    </ul>
+                    <ul class="nav navbar-top-links navbar-right">
+                        <li>
+                            <div class="dropdown profile-element" id="profileBoard">
+                             <span >
+                                 <img alt="image" class="img-circle" src="../../img/profile_small.jpg" id="userImg"/>
+                             </span>
+                                <a data-toggle="dropdown" class="dropdown-toggle" href="layouts.html#">
+                                    <strong class="font-bold" id="userName"></strong>
+                                    <span class="text-muted text-xs"><b class="caret"></b></span>
+                                    </span>
+                                </a>
+                                <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                                    <li><a href="../profile/profile.html">账户信息</a></li>
+                                    <li><a href="../profile/profileReset.html">账户设置</a></li>
+                                    <li><a href="../profile/passwordReset.html">账户安全</a></li>
+                                    <li><a onclick="logout()">登出</a></li>
+                                </ul>
+                            </div>
+                            <div id="unknownUserBoard" style="display: none;padding: 10px;padding-left: 0px;">
+                                <span style="vertical-align: middle;">
+                                    <a href="../login/login.html#"><strong class="font-bold">登陆/注册</strong></a>
+                                </span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+        </div>
+        <div class="row wrapper page-heading newHeader">
+            Í<div class="col-lg-12 text-center" style="margin-top:80px;color: #ffffff">
+            <h1>我的活动</h1>
+            <h2 class="no-margins">My activities</h2>
+        </div>
+        </div>
+        <div class="wrapper wrapper-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2">
+                    </div>
+                    <div class="col-lg-8">
+                         <a id="Float_button" onclick="toogle_tooltype()">
+                            <span class="plus elem-1"></span>
+                            <span class="plus elem-2"></span>
+                        </a>
+                        <div class="tooltype" style="overflow-y:scroll; border:1px solid;">
+                            <h1>创建新活动</h1>
+                            <div class="hr-line-dashed"></div>
+                            <form method="get" class="form-horizontal" style="margin: 10%;margin-top: 0; margin-bottom: 0" onsubmit="return false;">
+                                <div class="form-group"><label class="col-sm-2 control-label">发起人</label>
+                                    <div class="col-sm-4">
+                                        <input type="text" disabled="" placeholder="" class="form-control" id="proposerName"></div>
+                                    <label class="col-sm-2 control-label">活动类型</label>
+                                    <div class="col-sm-4">
+                                        <select class="form-control m-b" name="account" id="activityType">
+                                            <option>跑步</option>
+                                            <option>自行车</option>
+                                            <option>竞走</option>
+                                            <option>游泳</option>
+                                            <option>跳绳</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <!--</div>-->
+                                <div class="hr-line-dashed"></div>
+                                <div class="form-group"><label class="col-sm-2 control-label">活动名称</label>
+                                    <div class="col-sm-10"><input type="text" placeholder="5位及以上字幕/2位及以上中文" class="form-control" id="activityName"></div>
+                                </div>
+                                <div class="hr-line-dashed"></div>
+                                <div class="form-group"><label class="col-sm-2 control-label">活动地点</label>
+                                    <div class="col-sm-4"><input type="text" placeholder="5位及以上字幕/2位及以上中文" class="form-control" id="activityPlace"></div>
+                                    <label class="col-sm-2 control-label">人数上限</label>
+                                    <!--<p class="font-bold col-sm-2">-->
+                                        <!--人数上限-->
+                                    <!--</p>-->
+                                    <div class="col-sm-4"><input class="touchspin3" type="text" value="" name="demo3" id="activityLimitNum"></div>
+                                </div>
+                                <div class="hr-line-dashed"></div>
+                                <div class="row">
+                                    <div class="col-lg-1"></div>
+                                    <div class="col-lg-5">
+                                <div class="form-group" id="data_1">
+                                    <label class="font-noraml">开始日期</label>
+                                    <div class="input-group date">
+                                        <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                                        <input type="text" class="form-control" value="11/29/2016" id="activityStartDate">
+                                    </div>
+                                </div>
+                                    </div>
+                                    <div class="col-lg-5">
+                                        <div class="form-group">
+                                        <label class="font-noraml">开始时间</label>
+                                        <div class="input-group clockpicker" data-autoclose="true">
+                                            <input type="text" class="form-control" value="09:30" id="activityStartTime">
+                                <span class="input-group-addon">
+                                    <span class="fa fa-clock-o"></span>
+                                </span>
+                                        </div></div>
+                                    </div>
+                                    <div class="col-lg-1"></div>
+                                    </div>
+                                <div class="hr-line-dashed"></div>
+                                <div class="row">
+                                    <div class="col-lg-1"></div>
+                                    <div class="col-lg-5">
+                                        <div class="form-group" id="data_2">
+                                            <label class="font-noraml">结束日期</label>
+                                            <div class="input-group date">
+                                                <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                                                <input type="text" class="form-control" value="11/30/2016" id="activityEndDate">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-5">
+                                        <div class="form-group">
+                                        <label class="font-noraml">结束时间</label>
+                                        <div class="input-group clockpicker" data-autoclose="true">
+                                            <input type="text" class="form-control" value="09:30" id="activityEndTime">
+                                <span class="input-group-addon">
+                                    <span class="fa fa-clock-o"></span>
+                                </span>
+                                        </div></div>
+                                    </div><div class="col-lg-1"></div>
+                                </div>
+                                <div class="hr-line-dashed"></div>
+
+                                <div class="text-center">
+                                    <button class="btn btn-primary" onclick="toogle_tooltype_fade()">返回</button>
+                                    <button class="btn btn-primary" id="confirmNewAcitivityBtn">确认</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div id="vertical-timeline" class="vertical-container light-timeline no-margins">
+                        </div>
+                    </div>
+                    <div class="col-lg-2"></div>
+                </div>
+            </div>
+
+        </div>
+        <DIV class="text-center" id="hint"><h1>您还没有添加活动哦</h1></div>
+        <div class="footer">
+            <div class="pull-right"><strong>Contact</strong> 141250042@smail.nju.edu.cn</div>
+            <div><strong>Copyright</strong> GraceHan, 2016</div>
+        </div>
+
+    </div>
+</div>
+
+
+
+<!-- Mainly scripts -->
+<script src="../../js/jquery-2.1.1.js"></script>
+<script src="../../js/bootstrap.min.js"></script>
+<script src="../../js/plugins/metisMenu/jquery.metisMenu.js"></script>
+<script src="../../js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+<!-- Custom and plugin javascript -->
+<script src="../../js/inspinia.js"></script>
+<script src="../../js/plugins/pace/pace.min.js"></script>
+
+<!--datapicker-->
+<script src="../../js/plugins/datapicker/bootstrap-datepicker.js"></script>
+
+<!-- Color picker -->
+<script src="../../js/plugins/colorpicker/bootstrap-colorpicker.min.js"></script>
+
+<!-- Clock picker -->
+<script src="../../js/plugins/clockpicker/clockpicker.js"></script>
+
+<!--touch spin-->
+<script src="../../js/plugins/touchspin/jquery.bootstrap-touchspin.min.js"></script>
+
+<script src="../../js/plugins/sweetalert/sweetalert.min.js"></script>
+
+<script src="../../js/pageCtrl.js"></script>
+
+<script src="myActiviesCtrl.js"></script>
+
+<script>
+    $(document).ready(function() {
+
+        $('#data_1 .input-group.date').datepicker({
+            todayBtn: "linked",
+            keyboardNavigation: false,
+            forceParse: false,
+            calendarWeeks: true,
+            autoclose: true
+        });
+
+        $('#data_2 .input-group.date').datepicker({
+            startView: 1,
+            todayBtn: "linked",
+            keyboardNavigation: false,
+            forceParse: false,
+            autoclose: true,
+            format: "dd/mm/yyyy"
+        });
+
+        $('#data_3 .input-group.date').datepicker({
+            startView: 2,
+            todayBtn: "linked",
+            keyboardNavigation: false,
+            forceParse: false,
+            autoclose: true
+        });
+
+        $('#data_4 .input-group.date').datepicker({
+            minViewMode: 1,
+            keyboardNavigation: false,
+            forceParse: false,
+            autoclose: true,
+            todayHighlight: true
+        });
+
+        $('#data_5 .input-daterange').datepicker({
+            keyboardNavigation: false,
+            forceParse: false,
+            autoclose: true
+        });
+
+        $('.clockpicker').clockpicker();
+
+        $(".touchspin3").TouchSpin({
+            verticalbuttons: true,
+            buttondown_class: 'btn btn-white',
+            buttonup_class: 'btn btn-white'
+        });
+
+    });
+
+
+</script>
+</body>
+
+</html>

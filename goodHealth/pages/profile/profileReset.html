@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>顾得健康-GoodHealth| 账户设置</title>
+    <meta name="robots" content="NONE,NOARCHIVE" />
+    <meta name="keywords" content="顾得健康网,网络瘦身,健身,物联网健身,健康,运动,健康秤,码表,网络码表,追踪器,健身追踪器" />
+    <meta name="description" content="顾得健康网，引进先进物联网概念及人体检测技术，准确检测记录运动、睡眠、体重等数据，并对上传数据进行详细分析，智能绘制专业分析图表，同时借助网络平台互动、PK、分享，将互动娱乐性与健身健康完美结合，全面推动人们的身心健康改善。" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <link href="../../css/plugins/sweetalert/sweetalert.css" rel="stylesheet">
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../font-awesome/css/font-awesome.css" rel="stylesheet">
+
+    <link href="../../css/plugins/iCheck/custom.css" rel="stylesheet">
+
+    <link href="../../css/plugins/chosen/chosen.css" rel="stylesheet">
+
+    <link href="../../css/plugins/colorpicker/bootstrap-colorpicker.min.css" rel="stylesheet">
+
+    <link href="../../css/plugins/cropper/cropper.min.css" rel="stylesheet">
+
+    <link href="../../css/plugins/switchery/switchery.css" rel="stylesheet">
+
+    <link href="../../css/plugins/jasny/jasny-bootstrap.min.css" rel="stylesheet">
+
+    <link href="../../css/plugins/nouslider/jquery.nouislider.css" rel="stylesheet">
+
+    <link href="../../css/plugins/datapicker/datepicker3.css" rel="stylesheet">
+
+    <link href="../../css/plugins/ionRangeSlider/ion.rangeSlider.css" rel="stylesheet">
+    <link href="../../css/plugins/ionRangeSlider/ion.rangeSlider.skinFlat.css" rel="stylesheet">
+
+    <link href="../../css/plugins/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css" rel="stylesheet">
+
+    <link href="../../css/plugins/clockpicker/clockpicker.css" rel="stylesheet">
+
+    <link href="../../css/plugins/daterangepicker/daterangepicker-bs3.css" rel="stylesheet">
+
+    <link href="../../css/plugins/select2/select2.min.css" rel="stylesheet">
+
+    <link href="../../css/plugins/touchspin/jquery.bootstrap-touchspin.min.css" rel="stylesheet">
+
+
+    <link href="../../css/animate.css" rel="stylesheet">
+    <link href="../../css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/uploader.css">
+</head>
+
+<body class="top-navigation">
+<div id="wrapper">
+    <div id="page-wrapper" class="gray-bg">
+        <div class="row border-bottom white-bg">
+
+            <nav class="navbar navbar-static-top" role="navigation">
+                <div class="navbar-header">
+                    <button aria-controls="navbar" aria-expanded="false" data-target="#navbar" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
+                        <i class="fa fa-reorder"></i>
+                    </button>
+                    <a href="../landingGoodHealth.html" class="navbar-brand" style="font-family: 'comfortaa-bold';">GoodHealth</a>
+                </div>
+                <div class="navbar-collapse collapse" id="navbar">
+                    <ul class="nav navbar-nav">
+                        <li class="active dropdown" >
+                            <!--<a aria-expanded="false" role="button" href="layouts.html">活动</a>-->
+                            <a aria-expanded="false" role="button" href="dashboard_4.html#" class="dropdown-toggle" data-toggle="dropdown">活动<span class="caret"></span></a>
+                            <ul role="menu" class="dropdown-menu">
+                                <li class="active"><a href="../index.html">所有活动</a></li>
+                                <li><a href="../activities/myActivities.html">我的活动</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a aria-expanded="false" role="button" href="dashboard_4.html#" class="dropdown-toggle" data-toggle="dropdown">健康管理<span class="caret"></span></a>
+                            <ul role="menu" class="dropdown-menu">
+                                <li><a href="../healthManage/mySports.html">我的运动</a></li>
+                                <li><a href="../healthManage/myBody.html">身体管理</a></li>
+                                <li><a href="../healthManage/mySleep.html">睡眠分析</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a aria-expanded="false" role="button" href="dashboard_4.html#" class="dropdown-toggle" data-toggle="dropdown">社交<span class="caret"></span></a>
+                            <ul role="menu" class="dropdown-menu">
+                                <li><a href="../social/myCircle.html">我的圈子</a></li>
+                                <li><a href="../social/myFriendsManage.html">社交管理</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <form role="search" class="navbar-form-custom" action="../search_results.html">
+                                <div class="form-group">
+                                    <input type="text" placeholder="关键字搜索" class="form-control" name="top-search" id="top-search">
+                                </div>
+                            </form>
+                        </li>
+
+
+                    </ul>
+                    <ul class="nav navbar-top-links navbar-right">
+                        <li>
+                            <!--<a href="login.html">-->
+                                <!--<i class="fa fa-sign-out"></i> Log out-->
+                            <!--</a>-->
+
+                        <div class="dropdown profile-element" id="profileBoard" >
+                             <span>
+                                 <img alt="image" class="img-circle" src="../../img/profile_small.jpg" id="userImg" />
+                             </span>
+                            <a data-toggle="dropdown" class="dropdown-toggle" href="layouts.html#">
+                                  <strong class="font-bold" id="userName">David Williams</strong>
+                                    <span class="text-muted text-xs"><b class="caret"></b></span>
+                            </span>
+                                </a>
+                                <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                                    <li><a href="../profile/profile.html">账户信息</a></li>
+                                    <li><a href="../profile/profileReset.html">账户设置</a></li>
+                                    <li><a href="../profile/passwordReset.html">账户安全</a></li>
+                                    <li><a onclick="logout()">登出</a></li>
+                                </ul>
+                      </div>
+                        <div id="unknownUserBoard" style="display: none;padding:10px;padding-left: 0px;">
+                                <span style="vertical-align: middle;">
+                                    <a href="../login/login.html#"><strong class="font-bold">登陆/注册</strong></a>
+                                </span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+        </div>
+        <div class="row wrapper page-heading newHeader-Profile">
+            <div class="col-lg-12 text-center" style="margin-top:80px;color: #ffffff">
+                <h1>账户设置</h1>
+                <h2 class="no-margins">Profile reset</h2>
+            </div>
+        </div>
+        <div class="wrapper wrapper-content animated fadeInRight">
+
+            <div class="row m-b-lg m-t-lg no-margins">
+            <div class="col-lg-2 m-b-lg"></div>
+            <div class="col-lg-8 m-b-lg" >
+                <div class="tabs-container">
+                    <ul class="nav nav-tabs">
+                        <li><a data-toggle="tab" href="tabs.html#tab-1">用户信息</a></li>
+                        <li class="active"><a data-toggle="tab" href="tabs.html#tab-2">用户头像</a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div id="tab-1" class="tab-pane">
+                            <div class="panel-body">
+                                <form method="get" class="form-horizontal" onsubmit="return false;">
+                                    <div class="form-group"><label class="col-sm-2 control-label">邮箱</label>
+                                        <div class="col-sm-10"><input type="text" disabled="" placeholder="hmybbok@126.com" class="form-control" id="Email"></div>
+                                    </div>
+                                    <div class="hr-line-dashed"></div>
+                                    <div class="form-group"><label class="col-sm-2 control-label">用户名</label>
+                                        <div class="col-sm-10"><input type="text" placeholder="5位及以上字幕/2位及以上中文" class="form-control" id="newName"></div>
+                                    </div>
+                                    <div class="hr-line-dashed"></div>
+                                    <div class="form-group">
+                                        <label class="col-sm-2 control-label">性别<br/><small class="text-navy"></small></label>
+                                        <div class="col-sm-10">
+                                            <div class="i-checks"><label><input type="radio" checked="" value="男" name="sex"><i></i>男</label></div>
+                                            <div class="i-checks"><label> <input type="radio" value="女" name="sex"> <i></i> 女</label></div>
+                                        </div>
+                                    </div>
+                                    <div class="hr-line-dashed"></div>
+                                    <div class="form-group"><label class="col-sm-2 control-label">兴趣</label>
+                                        <div class="col-sm-10">
+                                            <select id="interestSelect" class="js-example-basic-multiple form-control m-b" multiple="multiple" style="width:100%;">
+                                                <option value="interest_bicycle">自行车</option>
+                                                <option value="interest_run">跑步</option>
+                                                <option value="interest_jog">慢跑</option>
+                                                <option value="interest_swim">游泳</option>
+                                                <option value="interest_ropeskip">跳绳</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="hr-line-dashed"></div>
+
+
+
+
+                                    <div class="form-group"><label class="col-sm-2 control-label">地点</label>
+                                        <div class="col-sm-10">
+                                            <select id="citySelect" class="js-example-basic-single form-control m-b" name="account" style="width:100%;">
+                                                <option>北京</option>
+                                                <option>上海</option>
+                                                <option>南京</option>
+                                                <option>广州</option>
+                                            </select>
+
+                                        </div>
+                                    </div>
+                                    <div class="hr-line-dashed"></div>
+                                    <div class="text-center">
+                                        <button class="btn btn-primary" id="confirmNewInfoBtn">确认</button>
+                                    </div>
+                                </form>
+
+                            </div>
+                        </div>
+                        <div id="tab-2" class="tab-pane active">
+                            <div class="panel-body">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="image-crop" >
+                                            <img src="../../img/p3.jpg" id="imgLg">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h4>预览</h4>
+                                        <div class="img-preview img-preview-sm"><img src="" id="imgSm"><></div>
+
+                                        <div class="btn-group" style="margin: 10px;margin-left: 0px;">
+                                            <label title="Upload image file" for="inputImage" class="btn btn-primary">
+                                                <input type="file" accept="image/*" name="file" id="inputImage" class="hide">
+                                                上传新头像
+                                            </label>
+                                            <label title="Donload image" id="download" class="btn btn-primary">下载</label>
+                                        </div>
+                                        </br>
+
+                                        <div class="btn-group" style="margin: 10px;margin-left: 0px;">
+                                            <button class="btn btn-white" id="zoomIn" type="button">放大</button>
+                                            <button class="btn btn-white" id="zoomOut" type="button">缩小</button>
+                                            <button class="btn btn-white" id="rotateLeft" type="button">向左旋转</button>
+                                            <button class="btn btn-white" id="rotateRight" type="button">向右旋转</button>
+                                        </div>
+                                        </br>
+                                        <button class="btn btn-warning" id="confirmNewLogo" onclick="resetLogo()">确认新头像</button>
+
+                                    </div>
+                                </div>
+                                <!--<img id="avatar-img" src="../../img/a4.jpg" class="img-circle"-->
+                                     <!--style="margin-top: 10px;width: 90px;height: 90px;">-->
+
+                                <!--<div id="upload-zone" class="uploader">-->
+                                    <!--<div class="browser">-->
+                                        <!--<label class="btn btn-default" for="avatar" style="width: 50%;">-->
+                                            <!--<span style="padding: 10px;">更换头像</span>-->
+                                            <!--<input id="avatar" type="file" accept="image/*" multiple="multiple">-->
+                                        <!--</label>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+            </div>
+
+                <div class="col-lg-2 m-b-lg"></div>
+            </div>
+            </div>
+
+        <div class="footer">
+            <div class="pull-right">
+                <strong>Contact</strong> 141250042@smail.nju.edu.cn
+            </div>
+            <div>
+                <strong>Copyright</strong> GraceHan, 2016
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+
+<!-- Mainly scripts -->
+<script src="../../js/jquery-2.1.1.js"></script>
+<script src="../../js/bootstrap.min.js"></script>
+
+<!-- Custom and plugin javascript -->
+<script src="../../js/inspinia.js"></script>
+<script src="../../js/plugins/pace/pace.min.js"></script>
+<script src="../../js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+<!-- Chosen -->
+<script src="../../js/plugins/chosen/chosen.jquery.js"></script>
+
+<!-- JSKnob -->
+<script src="../../js/plugins/jsKnob/jquery.knob.js"></script>
+
+<!-- Input Mask-->
+<script src="../../js/plugins/jasny/jasny-bootstrap.min.js"></script>
+
+<!-- Data picker -->
+<script src="../../js/plugins/datapicker/bootstrap-datepicker.js"></script>
+
+<!--&lt;!&ndash; NouSlider &ndash;&gt;-->
+<!--<script src="../../js/plugins/nouslider/jquery.nouislider.min.js"></script>-->
+
+<!-- Switchery -->
+<script src="../../js/plugins/switchery/switchery.js"></script>
+
+<!-- IonRangeSlider -->
+<script src="../../js/plugins/ionRangeSlider/ion.rangeSlider.min.js"></script>
+
+<!-- iCheck -->
+<script src="../../js/plugins/iCheck/icheck.min.js"></script>
+
+<!-- MENU -->
+<script src="../../js/plugins/metisMenu/jquery.metisMenu.js"></script>
+
+<!-- Color picker -->
+<script src="../../js/plugins/colorpicker/bootstrap-colorpicker.min.js"></script>
+
+<!-- Clock picker -->
+<script src="../../js/plugins/clockpicker/clockpicker.js"></script>
+
+<script src="../../js/plugins/sweetalert/sweetalert.min.js"></script>
+
+
+<!-- Date range use moment.js same as full calendar plugin -->
+<script src="../../js/plugins/fullcalendar/moment.min.js"></script>
+
+<!-- Date range picker -->
+<script src="../../js/plugins/daterangepicker/daterangepicker.js"></script>
+
+<!-- TouchSpin -->
+<script src="../../js/plugins/touchspin/jquery.bootstrap-touchspin.min.js"></script>
+
+<!-- Select2 -->
+<!--<script src="../../js/plugins/select2/select2.full.min.js"></script>-->
+<script src="../../js/select2.min.js"></script>
+
+<script>
+    $(document).ready(function(){
+        var $image = $(".image-crop > img")
+        $($image).cropper({
+            aspectRatio: 1.618,
+            preview: ".img-preview",
+            done: function(data) {
+                // Output the result data for cropping image.
+            }
+        });
+
+        var $inputImage = $("#inputImage");
+        if (window.FileReader) {
+            $inputImage.change(function() {
+                var fileReader = new FileReader(),
+                        files = this.files,
+                        file;
+
+                if (!files.length) {
+                    return;
+                }
+
+                file = files[0];
+                var path=file['name'];
+                window.localStorage.setItem("logoPath", path);
+                console.log(file['name']);
+//                var path=$("#imgLg").attr('src');
+//                $("#imgLg").attr('src',file.fullPath);
+//                console.log();
+                if (/^image\/\w+$/.test(file.type)) {
+                    fileReader.readAsDataURL(file);
+                    fileReader.onload = function () {
+                        $inputImage.val("");
+                        $image.cropper("reset", true).cropper("replace", this.result);
+                    };
+                } else {
+                    showMessage("Please choose an image file.");
+                }
+            });
+        } else {
+            $inputImage.addClass("hide");
+        }
+
+        $("#download").click(function() {
+            window.open($image.cropper("getDataURL"));
+        });
+
+        $("#zoomIn").click(function() {
+            $image.cropper("zoom", 0.1);
+        });
+
+        $("#zoomOut").click(function() {
+            $image.cropper("zoom", -0.1);
+        });
+
+        $("#rotateLeft").click(function() {
+            $image.cropper("rotate", 45);
+        });
+
+        $("#rotateRight").click(function() {
+            $image.cropper("rotate", -45);
+        });
+
+        $("#setDrag").click(function() {
+            $image.cropper("setDragMode", "crop");
+        });
+
+        $('#data_1 .input-group.date').datepicker({
+            todayBtn: "linked",
+            keyboardNavigation: false,
+            forceParse: false,
+            calendarWeeks: true,
+            autoclose: true
+        });
+
+        $('#data_2 .input-group.date').datepicker({
+            startView: 1,
+            todayBtn: "linked",
+            keyboardNavigation: false,
+            forceParse: false,
+            autoclose: true,
+            format: "dd/mm/yyyy"
+        });
+
+        $('#data_3 .input-group.date').datepicker({
+            startView: 2,
+            todayBtn: "linked",
+            keyboardNavigation: false,
+            forceParse: false,
+            autoclose: true
+        });
+
+        $('#data_4 .input-group.date').datepicker({
+            minViewMode: 1,
+            keyboardNavigation: false,
+            forceParse: false,
+            autoclose: true,
+            todayHighlight: true
+        });
+
+        $('#data_5 .input-daterange').datepicker({
+            keyboardNavigation: false,
+            forceParse: false,
+            autoclose: true
+        });
+
+        var elem = document.querySelector('.js-switch');
+        var switchery = new Switchery(elem, { color: '#1AB394' });
+
+        var elem_2 = document.querySelector('.js-switch_2');
+        var switchery_2 = new Switchery(elem_2, { color: '#ED5565' });
+
+        var elem_3 = document.querySelector('.js-switch_3');
+        var switchery_3 = new Switchery(elem_3, { color: '#1AB394' });
+
+        $('.i-checks').iCheck({
+            checkboxClass: 'icheckbox_square-green',
+            radioClass: 'iradio_square-green'
+        });
+
+        $('.demo1').colorpicker();
+
+        $(".select2_demo_1").select2();
+        $(".select2_demo_2").select2();
+        $(".select2_demo_3").select2({
+            placeholder: "Select a state",
+            allowClear: true
+        });
+
+        $(".js-example-basic-multiple").select2();
+        $(".js-example-basic-single").select2();
+
+
+        $(".touchspin1").TouchSpin({
+            buttondown_class: 'btn btn-white',
+            buttonup_class: 'btn btn-white'
+        });
+
+        $(".touchspin2").TouchSpin({
+            min: 0,
+            max: 100,
+            step: 0.1,
+            decimals: 2,
+            boostat: 5,
+            maxboostedstep: 10,
+            postfix: '%',
+            buttondown_class: 'btn btn-white',
+            buttonup_class: 'btn btn-white'
+        });
+
+        $(".touchspin3").TouchSpin({
+            verticalbuttons: true,
+            buttondown_class: 'btn btn-white',
+            buttonup_class: 'btn btn-white'
+        });
+
+
+    });
+    var config = {
+        '.chosen-select'           : {},
+        '.chosen-select-deselect'  : {allow_single_deselect:true},
+        '.chosen-select-no-single' : {disable_search_threshold:10},
+        '.chosen-select-no-results': {no_results_text:'Oops, nothing found!'},
+        '.chosen-select-width'     : {width:"95%"}
+    }
+    for (var selector in config) {
+        $(selector).chosen(config[selector]);
+    }
+
+    $("#ionrange_1").ionRangeSlider({
+        min: 0,
+        max: 5000,
+        type: 'double',
+        prefix: "$",
+        maxPostfix: "+",
+        prettify: false,
+        hasGrid: true
+    });
+
+    $("#ionrange_2").ionRangeSlider({
+        min: 0,
+        max: 10,
+        type: 'single',
+        step: 0.1,
+        postfix: " carats",
+        prettify: false,
+        hasGrid: true
+    });
+
+    $("#ionrange_3").ionRangeSlider({
+        min: -50,
+        max: 50,
+        from: 0,
+        postfix: "°",
+        prettify: false,
+        hasGrid: true
+    });
+
+    $("#ionrange_4").ionRangeSlider({
+        values: [
+            "January", "February", "March",
+            "April", "May", "June",
+            "July", "August", "September",
+            "October", "November", "December"
+        ],
+        type: 'single',
+        hasGrid: true
+    });
+
+    $("#ionrange_5").ionRangeSlider({
+        min: 10000,
+        max: 100000,
+        step: 100,
+        postfix: " km",
+        from: 55000,
+        hideMinMax: true,
+        hideFromTo: false
+    });
+
+    $(".dial").knob();
+
+//    $("#basic_slider").noUiSlider({
+//        start: 40,
+//        behaviour: 'tap',
+//        connect: 'upper',
+//        range: {
+//            'min':  20,
+//            'max':  80
+//        }
+//    });
+//
+//    $("#range_slider").noUiSlider({
+//        start: [ 40, 60 ],
+//        behaviour: 'drag',
+//        connect: true,
+//        range: {
+//            'min':  20,
+//            'max':  80
+//        }
+//    });
+//
+//    $("#drag-fixed").noUiSlider({
+//        start: [ 40, 60 ],
+//        behaviour: 'drag-fixed',
+//        connect: true,
+//        range: {
+//            'min':  20,
+//            'max':  80
+//        }
+//    });
+
+
+</script>
+
+
+
+<!-- Image cropper -->
+<script src="../../js/plugins/cropper/cropper.min.js"></script>
+
+<script src="js/dmuploader.js"></script>
+<script src="../../js/pageCtrl.js"></script>
+<script src="profileResetCtrl.js"></script>
+</body>
+
+</html>
